@@ -1,0 +1,27 @@
+{
+  "name": "redirect-v2",
+  "version": "1.0.0",
+  "description": "Version 2 of EMC Redirect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piket/redirect-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piket/redirect-v2/issues"
+  },
+  "homepage": "https://github.com/piket/redirect-v2#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "pg": "^4.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.5.1"
+  }
+}
