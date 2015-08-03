@@ -1,0 +1,84 @@
+input[type=text].invalid+label:after, input[type=text]:focus.invalid+label:after, input[type=password].invalid+label:after, input[type=password]:focus.invalid+label:after, input[type=email].invalid+label:after, input[type=email]:focus.invalid+label:after, input[type=url].invalid+label:after, input[type=url]:focus.invalid+label:after, input[type=time].invalid+label:after, input[type=time]:focus.invalid+label:after, input[type=date].invalid+label:after, input[type=date]:focus.invalid+label:after, input[type=datetime-local].invalid+label:after, input[type=datetime-local]:focus.invalid+label:after, input[type=tel].invalid+label:after, input[type=tel]:focus.invalid+label:after, input[type=number].invalid+label:after, input[type=number]:focus.invalid+label:after, input[type=search].invalid+label:after, input[type=search]:focus.invalid+label:after, textarea.materialize-textarea.invalid+label:after, textarea.materialize-textarea:focus.invalid+label:after {
+  content: attr(data-error);
+  color: #F44336;
+  opacity: 1;
+  min-width: 233px;
+}
+
+div.nav-wrapper {
+  height: 67.5px;
+  background-color: rgb(78, 80, 82);
+  box-shadow: none;
+  position: relative;
+}
+
+body {
+  font-family: "Helvetica Neue", arial, sans-serif;
+}
+
+.container {
+  margin-top: 12.5% !important;
+}
+
+a.logo {
+  position: absolute;
+  left: 60px;
+}
+
+img.emc-logo {
+  height: 90px;
+  width: 90px;
+}
+
+.col.s12.url-container {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+@media only screen and (min-width: 992px) {
+
+.col.s12.url-container {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.container {
+  margin-top: 12.5% !important;
+}
+
+div.nav-wrapper {
+  height: 90px;
+}
+
+  a.logo {
+    position: absolute;
+    left: 45px;
+  }
+
+  img.emc-logo {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+.btn {
+  width: inherit;
+}
+
+footer.page-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.copyright {
+  margin: 5%;
+}
+
+footer.page-footer .footer-copyright {
+    overflow: visible;
+    height: 50px;
+    line-height: 50px;
+    color: rgba(35, 25, 35, 1) !important;
+    background-color: rgba(51, 51, 51, 0.08) !important;
+}

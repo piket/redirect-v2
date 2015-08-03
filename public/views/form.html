@@ -1,0 +1,55 @@
+  <div class="container">
+    <div class="col s12 m12">
+      <div class="row header">
+        <h3 class="flow-text center">Please enter your info to be redirected to {{title}}!</h3>
+      </div>
+      <div class="row">
+        <form class="col s8 offset-s2 m12">
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input id="name" type="text" ng-model="name" pattern=".{4,}" class="{validate: requiredFields}">
+              <label for="name" data-error="This field is required (at least 4 characters)">Name</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input id="company" type="text" ng-model="company" pattern=".{2,}" class="{validate: requiredFields}">
+              <label for="company" data-error="This field is required (at least 2 characters)">Company</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m12">
+              <input id="email" type="email" ng-model="email" ng-class="{validate: requiredFields}">
+              <label for="email" data-error="This doesn't appear to be a valid email.">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field submission col s12">
+              <button ng-if="showTimer" ng-disabled="!isValidTimer()" class="btn waves-effect waves-light" type="submit" name="action" ng-click="submit(url)">
+                {{message}}
+              </button>
+              <button ng-if="!showTimer" ng-disabled="!isValid()" class="btn waves-effect waves-light" type="submit" name="action" ng-click="submit(url)">
+                {{message}}
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col s12 m12">
+            <h6 class="right">
+              <a ng-cloak ng-if="skipThis" ng-href="{{url}}">skip</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65717641-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
