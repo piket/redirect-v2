@@ -82,3 +82,27 @@ footer.page-footer .footer-copyright {
     color: rgba(35, 25, 35, 1) !important;
     background-color: rgba(51, 51, 51, 0.08) !important;
 }
+
+.submit-btn {
+  background-color: #2C95DD;
+  text-transform: initial;
+}
+
+.submit-btn:hover {
+  background-color: #46AFF7;
+}
+
+
+.skip {
+  color: #9e9e9e;
+  text-decoration: none;
+}
+
+.skip:hover {
+  color: #2C95DD;
+  text-decoration: none;
+}
+
+.title {
+  color: #2C95DD;
+}

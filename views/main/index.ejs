@@ -4,7 +4,11 @@
   </div>
 </nav>
 
-<ng-view ng-cloak> </ng-view>
+<% if(page == 'main') { %>
+    <% include ./main.ejs %>
+<% } else { %>
+    <% include ./form.ejs %>
+<% } %>
 
 <footer ng-cloak class="page-footer">
   <div class="footer-copyright">
