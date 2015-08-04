@@ -83,15 +83,22 @@ footer.page-footer .footer-copyright {
     background-color: rgba(51, 51, 51, 0.08) !important;
 }
 
-.submit-btn {
+.submit-btn,.gen-btn {
   background-color: #2C95DD;
   text-transform: initial;
 }
 
-.submit-btn:hover {
+.submit-btn:hover,.gen-btn:hover {
   background-color: #46AFF7;
 }
 
+.submit-btn:visited,.gen-btn:visited {
+  background-color: #2C95DD;
+}
+
+.submit-btn:focus,.gen-btn:focus {
+  background-color: #2C95DD;
+}
 
 .skip {
   color: #9e9e9e;
