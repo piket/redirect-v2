@@ -30,7 +30,7 @@
           <div class="row">
             <div class="input-field submission col s12">
               <input type="hidden" id="version" name="version" value="<%= skip === 1 ? 'skip' : 'no skip' %>">
-              <button class="btn waves-effect waves-light submit-btn" type="submit" name="action" value="<%= redirect %>">
+              <button onclick="_gaq.push(['_trackEvent', 'submit_form', 'clicked'])" class="btn waves-effect waves-light submit-btn" type="submit" name="action" value="<%= redirect %>">
                 <%= message %>
               </button>
             </div>
@@ -40,7 +40,7 @@
           <div class="row">
             <div class="col s12 m12">
               <h6 class="right">
-                <a class="skip" href="<%= redirect %>">skip</a>
+                <a class="skip" onclick="_gaq.push(['_trackEvent', 'skip', 'clicked'])" name="skip" href="<%= redirect %>">skip</a>
               </h6>
             </div>
           </div>
