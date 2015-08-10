@@ -14,7 +14,8 @@ router.get('/generate', function(req,res) {
 
 router.get('/redirect', function(req,res) {
     var title = req.query.t;
-    var skip = Math.floor(Math.random() * 2);
+    // var skip = Math.floor(Math.random() * 2);
+    var skip = 0;
     console.log("skip?",skip);
 
     if(!title) {
